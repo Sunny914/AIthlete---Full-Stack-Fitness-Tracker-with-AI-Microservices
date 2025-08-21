@@ -38,4 +38,3 @@ flowchart TD
     E -->|Publish Activity Data| F[RabbitMQ]
     F -->|Consume Data| G[AI Service (Google Gemini API)]
     G -->|Send Recommendations| D
-
