@@ -1,5 +1,4 @@
-# AIthlete---Full-Stack-Fitness-Tracker-with-AI-Microservices
-The application is a fully featured fitness tracker where users can log their activity data. Based on this logged data, the application leverages AI to generate personalized health recommendations for the users.
+# **Full-Stack Fitness Tracker with AI & Microservices**  
 
 **Description:**  
 Built a **fitness tracking application** using **Spring Boot microservices** and **React**, integrating **Google Gemini AI** for personalized health recommendations.  
@@ -25,6 +24,15 @@ Built a **fitness tracking application** using **Spring Boot microservices** and
 
 ---
 
-## **🔗 Links**
-- **GitHub:** [Click Here](https://github.com/Sunny914)  
-- **Live Demo:** [Click Here](https://)  
+## **🏗️ Architecture**
+
+### **1. High-Level Architecture**
+```mermaid
+flowchart TD
+    A[React Frontend] -->|Axios + OAuth2 PKCE| B[API Gateway]
+    B -->|Service Discovery| C[Eureka Server]
+    B --> D[User Service (PostgreSQL)]
+    B --> E[Activity Service (MongoDB)]
+    E -->|Publish Activity Data| F[RabbitMQ]
+    F -->|Consume Data| G[AI Service (Google Gemini API)]
+    G -->|Send Recommendations| D
