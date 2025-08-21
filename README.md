@@ -1,71 +1,30 @@
 # AIthlete---Full-Stack-Fitness-Tracker-with-AI-Microservices
 The application is a fully featured fitness tracker where users can log their activity data. Based on this logged data, the application leverages AI to generate personalized health recommendations for the users.
 
-📌 Description
+**Description:**  
+Built a **fitness tracking application** using **Spring Boot microservices** and **React**, integrating **Google Gemini AI** for personalized health recommendations.  
 
-Built a fitness tracking application using Spring Boot microservices and React, integrating AI (Google Gemini API) for personalized health recommendations.
+---
 
-✨ Features
+## **✨ Key Features**
+- **Microservices Architecture** with **API Gateway**, **Eureka Service Discovery**, and **Spring Cloud Config**  
+- **Asynchronous AI Processing** via **RabbitMQ** for non-blocking recommendation generation  
+- **Secure Authentication** using **OAuth2 + Keycloak** with **PKCE flow** and **JWT tokens**  
+- **User Service** with **PostgreSQL** and **Activity Service** with **MongoDB**  
+- **React Frontend** (Vite, Redux Toolkit, Material UI) integrated via **Axios** and secured with **OAuth2 PKCE**  
 
-✔ User Authentication – Secure login and registration with OAuth2 + Keycloak
-✔ Activity Logging – Track workouts, steps, calories, and more
-✔ AI-Powered Insights – Get personalized health tips using Google Gemini API
-✔ Microservices Architecture – API Gateway, Service Discovery, Centralized Config
-✔ Asynchronous AI Processing – Implemented via RabbitMQ for non-blocking workflows
-✔ Responsive UI – Built with React, Vite, Material UI, Redux Toolkit
-✔ Real-Time Communication – Powered by Spring WebFlux & WebClient
+---
 
-🛠 Tech Stack
-Backend
+## **🛠 Tech Stack**
+- **Backend:** Spring Boot, Spring Cloud (Gateway, Eureka, Config), Spring Data JPA, Spring Data MongoDB, RabbitMQ, WebClient  
+- **Frontend:** React, Vite, Redux Toolkit, Material UI, Axios  
+- **Databases:** PostgreSQL, MongoDB  
+- **Security:** OAuth2, Keycloak, JWT, PKCE  
+- **AI:** Google Gemini API  
+- **Tools:** IntelliJ IDEA, VS Code, Postman, Docker, PGAdmin, MongoDB Compass  
 
-Spring Boot, Spring Cloud (Gateway, Eureka, Config)
+---
 
-Spring Data JPA, Spring Data MongoDB
-
-RabbitMQ, Spring AMQP
-
-WebClient, Lombok
-
-Frontend
-
-React, Vite, Redux Toolkit, Material UI, Axios
-
-Databases
-
-PostgreSQL, MongoDB
-
-AI Integration
-
-Google Gemini API
-
-Security
-
-OAuth2, Keycloak, JWT, PKCE
-
-Tools & DevOps
-
-Docker, Postman, PGAdmin, MongoDB Compass
-
-📂 Architecture
-
-The app follows a microservices architecture with:
-
-API Gateway for routing
-
-Service Discovery (Eureka) for dynamic scaling
-
-Centralized Config Server for configuration management
-
-RabbitMQ for message-based asynchronous AI processing
-
-🚀 Deployment
-
-Backend: Deployed on Docker containers
-
-Frontend: React app deployed via Netlify / Render
-
-🔗 Links
-
-GitHub Repository: Click Here
-
-Live Demo: Click Here
+## **🔗 Links**
+- **GitHub:** [Click Here](https://github.com/Sunny914)  
+- **Live Demo:** [Click Here](https://)  
