@@ -33,8 +33,8 @@ Built a **fitness tracking application** using **Spring Boot microservices** and
 flowchart TD
     A[React Frontend] -->|Axios + OAuth2 PKCE| B[API Gateway]
     B -->|Service Discovery| C[Eureka Server]
-    B --> D[User Service (PostgreSQL)]
     B --> E[Activity Service (MongoDB)]
+    B --> D[User Service (PostgreSQL)]
     E -->|Publish Activity Data| F[RabbitMQ]
     F -->|Consume Data| G[AI Service (Google Gemini API)]
     G -->|Send Recommendations| D
