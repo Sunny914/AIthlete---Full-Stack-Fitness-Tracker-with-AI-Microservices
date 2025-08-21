@@ -24,24 +24,7 @@ Built a **fitness tracking application** using **Spring Boot microservices** and
 
 ---
 
-sequenceDiagram
-    participant User
-    participant Frontend
-    participant Keycloak
-    participant API Gateway
-    participant Services
 
-    User->>Frontend: Login Request
-    Frontend->>Keycloak: OAuth2 PKCE Authorization
-    Keycloak->>Frontend: Authorization Code
-    Frontend->>Keycloak: Exchange Code for Token
-    Keycloak->>Frontend: Access + Refresh Token
-    Frontend->>API Gateway: API Request with JWT
-    API Gateway->>Services: Validate Token & Forward Request
-    Services->>API Gateway: Response
-    API Gateway->>Frontend: Return Data
-
-    ---
 
 ## **🏗️ Architecture**
 
@@ -55,3 +38,4 @@ flowchart TD
     E -->|Publish Activity Data| F[RabbitMQ]
     F -->|Consume Data| G[AI Service (Google Gemini API)]
     G -->|Send Recommendations| D
+
