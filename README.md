@@ -49,4 +49,28 @@ This project demonstrates **modern full-stack development**, **secure authentica
 
 ---
 
-## **📂 Project Structure**
+## **📂 Project Architecture**
+flowchart TB
+    subgraph Frontend
+        A[React App]
+    end
+    
+    subgraph Backend
+        B[Spring Boot API Gateway]
+        C[Auth Service]
+        D[URL Service]
+        E[Analytics Service]
+    end
+    
+    subgraph Database
+        F[(PostgreSQL)]
+    end
+
+    A -->|REST API Calls| B
+    B --> C
+    B --> D
+    B --> E
+    C -->|Store Users & JWT| F
+    D -->|Store Short URLs| F
+    E -->|Track Clicks| F
+
